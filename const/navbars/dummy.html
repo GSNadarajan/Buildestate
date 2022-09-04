@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthivar Construction</title>
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    
+    
+
+    <style>
+        .home_img{
+          
+            height:100%;
+            width:100%;
+           
+        }
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+
+      @media screen and (min-width:1200px){
+          
+        .main_right{
+          transform: translateX(50px);
+          transform: translateY(150px);
+      }
+       
+      .main_rightt{
+          /* transform: translateX(400px); */
+          transform: translateY(170px);
+      }
+      }
+    @media screen and (max-width:880px) and (min-width:767px){
+        .main_right{
+          transform: translateX(0px);
+          transform: translateY(130px);
+      }
+       
+      .main_rightt{
+          /* transform: translateX(400px); */
+          transform: translateY(150px);
+      }
+    }
+    .car{
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow:hidden;
+    display: flex;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);  
+    backdrop-filter: blur(5px);
+  }
+
+
+  .scrolldown{
+       position: absolute;
+       bottom: 20px;
+       left:50% ;
+       width:40px;
+      height:40px;
+      /* background:white; */
+      transform: translateY(-80px) translateX(-50%) rotate(45deg);
+      }
+  
+    .scrolldown span{
+      position: absolute;
+      top:0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+
+      animation: animate 1.5s linear infinite;
+      opacity: 0;
+    }
+
+    .scrolldown span:nth-child(1)
+    {
+      transform: translate(-15px, -15px);
+      animation-delay: -0.4s;
+    }
+
+
+    .scrolldown span:nth-child(2)
+    {
+      transform: translate(0, 0);
+      animation-delay: -0.2s;
+    }
+
+    .scrolldown span:nth-child(3)
+    {
+      transform: translate(15px, 15px);
+      animation-delay: 0s;
+    }
+
+    @keyframes animate{
+      0%{
+        top: -5px;
+        left:-5px;
+      opacity: 0;     
+     }
+     25%{
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+     }
+     100%{
+      top: 5px;
+      left:5px;
+      opacity: 0;
+     }
+    }
+
+    .zoom {
+  
+  transition: transform .5s;
+}
+
+.zoom:hover {
+
+  transform: scale(0.9); 
+}
+
+   
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 bg-white p-5">
+
+
+                <img src="Digital.gif" alt="Girl in a jacket" width="100%" height="100%">
+                
+             
+            </div>
+
+            <div class="col-md-6 bg-white p-5 ">
+            
+                <h2>Why choose us?</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+
+                <div class="row p-3 mt-4" style="border-radius:10px;background: linear-gradient(to bottom right, #cc33ff 0%, #00ffff 104%);">
+                    
+                      <div class="float-left">
+                        <i class="bi bi-lightbulb-fill"style="color:white; background: rgba(255,255,255,0.1);padding:9px;border-radius:4px;"></i>
+                      </div>
+
+                      <div class="float-right mr-5">
+                     <p class="text-white" style="padding:5px 0px;">&nbsp;Marketing Thinking and development</p>
+                      </div>
+                </div>
+
+                <div class="row p-3 mt-4" style="border-radius:10px;background: linear-gradient(to bottom right, #cc33ff 0%, #00ffff 104%);">
+                
+                    <h6 class="text-white" style="padding:5px 0px;"><span>   <i class="bi bi-lightbulb-fill"style="color:white;background: rgba(255,255,255,0.1);padding:9px;border-radius:4px;"></i></span>&nbsp;Cost effective review and management</h6>
+                   
+                
+                </div> 
+
+
+                <div class="row p-3 mt-4" style="border-radius:10px;background: linear-gradient(to bottom right, #cc33ff 0%, #00ffff 104%);">
+                
+                    <h6 class="text-white" style="padding:5px 0px;"><span>   <i class="bi bi-lightbulb-fill"style="color:white;background: rgba(255,255,255,0.1);padding:9px;border-radius:4px;"></i></span>&nbsp;Compaign oprimization and improvement</h6>
+                    
+
+                </div> 
+
+                <div class="row p-3 mt-4" style="border-radius:10px;background: linear-gradient(to bottom right, #cc33ff 0%, #00ffff 104%);">
+                
+                    <h6 class="text-white" style="padding:5px 0px;"><span>   <i class="bi bi-lightbulb-fill"style="color:white;background: rgba(255,255,255,0.1);padding:9px;border-radius:4px;"></i></span>&nbsp;Frasible proposal</h6>
+                     
+                
+                </div> 
+
+             
+
+                
+
+                
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</html>

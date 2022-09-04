@@ -1,0 +1,111 @@
+
+    .container01{
+        position:relative;
+        text-align:center;
+        color:white;
+      }
+      .centered01{
+        position:absolute;
+        top:25%;
+        left:50%;
+        transform: translate(-50%, -50%);
+       
+      }
+      /* @media screen and (max-width:768px){
+        .descar{
+          display:none;
+        }
+      } */
+     @media screen and (max-width:767px){
+        .descar{
+            display: none;
+        }
+     }
+      @media screen and (min-width:768px){
+       
+        .mobcar{
+            display:none;
+        }
+      }
+@media screen and (min-width: 300px){
+    .hdcar{
+      margin-top:-13px;
+      font-size:12px;
+      color:black;
+      font-weight:bold;
+     
+      }
+      .hcar{
+          margin-top: 7px;
+          /* margin-left: -8px; */
+       }
+      .pcar{
+          margin-top:50px;
+          color:black;
+          font-weight:normal;
+          font-size: 13px;
+        }
+        .scar{
+          margin-top:100px;
+           width:250px;
+           height:-12px; 
+          margin-right:5px;
+  
+      }
+
+   }
+      @media screen and (min-width: 341px){
+        .hdcar{
+      margin-top:-7px;
+      font-size:16px;
+      color:black;
+      font-weight:bold;
+     
+      }
+      .hcar{
+          margin-top: 8px;
+          margin-left: -8px;
+       }
+      .pcar{
+          margin-top:49px;
+          color:black;
+          font-weight:normal;
+          font-size: 13px;
+        }
+        .scar{
+          margin-top:96px;
+           width:240px;
+           height:-12px; 
+          margin-right:5px;
+  
+      }
+   }
+
+   @media screen and (min-width: 576px){
+    .hdcar{
+      margin-top:-20px;
+      font-size:19px;
+      color:black;
+      font-weight:bold;
+     
+      }
+      .hcar{
+          margin-top: 16px;
+          /* margin-left: -8px; */
+       }
+      .pcar{
+          margin-top:60px;
+          color:black;
+          font-weight:normal;
+          font-size: 16px;
+        }
+        .scar{
+          margin-top:130px;
+           width:290px;
+           height:-12px; 
+          margin-right:5px;
+  
+      }
+
+   }
+      

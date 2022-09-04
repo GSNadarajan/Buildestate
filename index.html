@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildEstate</title>
+    <link rel="icon" type="image/x-icon" href="photo_2022-08-13_18-52-20-removebg-preview.ico">
+   
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- cdn for bootstrapicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- features css -->
+       <link href="assets/dist/css/about.css" rel="stylesheet" >
+    
+       <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+       <!-- cdn for bootstrapicons -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+       <!-- features css -->
+          <link href="assets/dist/css/feature.css" rel="stylesheet" >
+        <!-- navbar css -->
+        <link href="assets/dist/css/navbar.css" rel="stylesheet" >
+        <!-- corousell for mobile -->
+        <link href="assets/dist/css/mobile.css" rel="stylesheet">
+   
+         <link href="assets/dist/css/app.css" rel="stylesheet">
+       
+       <!-- Google fonts -->
+       
+       <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Inter&family=Kaushan+Script&family=Merienda:wght@400;700&family=Oswald:wght@600&family=Poppins:wght@300&family=Roboto+Condensed:wght@300&family=Signika:wght@300;500&family=Tajawal&family=Teko:wght@300&display=swap" rel="stylesheet">
+       
+       <!-- JavaScript Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+ <style>
+          
+.zoom {
+  
+  transition: transform .5s;
+}
+
+.zoom:hover {
+
+  transform: scale(0.9); 
+}
+.car1{
+  background: rgba(255,255,255,0.1);
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+
+}
+.car2{
+  background: rgba(255,255,255,0.1);
+  border-radius:30px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+
+}
+.car{
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow:hidden;
+    display: flex;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);  
+    backdrop-filter: blur(5px);
+  }
+  .content{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .content:hover{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  @media screen and (min-width:1200px){
+  .nav-center{
+
+position: absolute;
+left: 40%;
+transform: translatex(-40%);
+max-width:1900px;
+margin-left:100px;
+
+}
+}
+
+.nav-link{
+  font-size:20px;
+}
+
+.nav-item{
+  position:relative;
+}
+
+.nav-item::after{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  content:'';
+  background-color: #6904c7;
+  width:0%;
+  height:4px;
+}
+.navbar .nav-item:hover::after{
+  width:100%;
+}
+@media screen and (min-width:576px){
+  .ehm{
+    margin-left:20px;
+  }
+
+}
+@media screen and (min-width:576px){
+  .see{
+    float:right;
+    margin-right:-165px;
+    margin-top:50px;
+  }
+  .see1{
+    float:right;
+    margin-right:40px;
+  }
+}
+@media screen and (max-width:575px){
+  .see{
+    float:right;
+    margin-right:-160px;
+    margin-top:50px;
+  }
+  .see1{
+    /* margin-top: 5px; */
+    float:right;
+    margin-right:10px;
+  }
+}
+@media screen and (max-width:400px){
+  .seen1{
+    margin-top:35px
+  }
+  .seen{
+    margin-top:30px;
+  }
+}
+@media screen and (min-width:576px){
+  .con{
+    display:none;
+  }
+  .conn{
+    display:none;
+  }
+
+   
+}
+@media screen and (max-width:575px){
+  .con1 , .conn1{
+    display:block;
+
+    
+
+
+  }
+}
+     </style>
+</head>
+
+
+<body style="font-family: 'Poppins', sans-serif;margin:0%;padding:0%;background-color:#1a1a1a;"> 
+    
+  
+
+ <nav class="navbar  navbar-expand-lg">
+  <div class="container">
+     <a class="navbar-brand" href="#">   <h3 class="float-md-start text-light mb-0 build"  style="font-weight:900;"><i class="bi bi-building" style="color: rgb(92, 1, 177);margin-right:0px;"></i><span style="color: rgb(92, 1, 177);margin-top:1px;" >Build</span>Estate</h3></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+    </svg></span>
+</button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto">
+              <li class="nav-item"> <a class="bg nav-link text-white" href="#">Home</a> </li>
+              <li class=" nav-item "><a class="bg nav-link text-white" href="# ">How it's work</a>
+              <li class="nav-item "><a class="bg nav-link text-white" href="#">Agent</a></li>
+              <li class="nav-item "><a class="bg nav-link text-white " href="#">Sales</a></li>
+
+  </ul>
+  <button class="btn  text-white conn1" style="background-color: rgb(92, 1, 177);" type="submit">Contact</button>
+
+</div>
+</div>
+
+
+</nav>
+
+ 
+ <!-- navbar ends -->
+
+ <!-- corousell starts -->
+ <div class="container  caarr"  style="margin-top:60px;">
+  
+  
+
+  <div class="bd-example ">
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+  
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://img.freepik.com/free-vector/skyscrapers-clouds-highrise-city-buildings-rooftops-peek-up-up-cumulonimbus-cloudscape-blue-sky-sun-shine-urban-view-background-downtown-architecture-cartoon-vector-illustration_107791-10782.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid  mt-1 descar" alt="Responsive image" style="border-radius:15px;width:100%;height: 470px;opacity:0.5;">
+      <div class="carousel-caption d-none d-md-block ">
+        <h2 class=""style="color:white;font-size:40px">Let's find a home</h2>
+        <h2 class="" style="color:white;font-size:40px;">that's perfect for you</h2>
+        <p class=" " style="font-size:28px;color:white;margin-bottom:60px;">Search confidentially with your trusted source of homes.</p>
+    
+        <div class="input-group " style="margin-bottom: 100px;">
+            <input type="text" class="form-control" placeholder="Enter an address,neighbourhood city or ZIP code." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text text-white"  style="background-color:rgb(92, 1, 177);border:rgb(92, 1, 177)" ><i class="bi bi-search"></i>Search</span>
+                </div>
+      </div>
+    </div>
+  </div>
+
+   
+  
+</div>
+</div>
+<!-- corousell desktop ends -->
+
+<!-- mobile corousell starts -->
+<div class="container01 mobcar" style="border-radius:50px;">
+  <img class="carimg "src="https://img.freepik.com/free-vector/skyscrapers-clouds-highrise-city-buildings-rooftops-peek-up-up-cumulonimbus-cloudscape-blue-sky-sun-shine-urban-view-background-downtown-architecture-cartoon-vector-illustration_107791-10782.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" style="height:100%;width:100%;opacity:0.5;border-radius:17px" class="img-fluid" alt="Responsive image">
+  <h4 class="centered01 hdcar " style="color:white;" >Let's find a home</h4>
+  <h4 class="centered01 hcar hdcar " style="color:white;">that's perfect for you.</h4>
+   <p class="centered01 pcar " style="color:white;">Search confidentially with your trusted source of homes.</p>
+   <div class="input-group centered01 scar" >
+              <input type="text" class="form-control " placeholder="Enter an address." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                      <span class="input-group-text text-white"  style="background-color: rgb(92, 1, 177);" >Search</span>
+                  </div> 
+   </div>
+</div>
+<!-- mobile corousell ends -->
+
+<!-- company icons starts -->
+
+    
+<div class="container text-white text-center">
+  
+  <h5 class=" mt-5 " style="color:white;;">Trusted by 20,000+ companies</h5> 
+</div>
+  
+<div class="container">
+  <div class="row  text-center" style="margin-top:2.5rem;margin-bottom:50px;">
+    <!-- first icon -->
+    <div class="col-sm-3">
+    <i class="bi bi-google mb-4" style="font-size:30px;color:white;"><br><span >Google</span></i>
+    </div>
+    <!-- second icon -->
+    <div class="col-sm-3">
+    <i class="bi bi-github" style="font-size:30px;color:white;"> <br><span>GitHub</span></i>
+    </div>
+    <!-- third icon -->
+    <div class="col-sm-3">
+    <i class="bi bi-twitter" style="font-size:30px;color:white;"> <br><span >Twitter</span></i>
+    </div>
+    <!-- fourth icon -->
+    <div class="col-sm-3">
+    <i class="bi bi-microsoft" style="font-size:30px;color:white;"> <br><span >Microsoft</span></i>
+    </div>
+      
+  </div>
+</div>
+
+
+<!-- company icons ends -->
+
+
+
+
+
+  <div class="mt-5 " style="     background-color: #6904c7;
+  background-image: radial-gradient( at 19% 99%, hsla(303, 49%, 64%, 1) 0, transparent 50% ),radial-gradient(at 84% 2%, hsla(254, 86%, 63%, 1) 0, transparent 50%),radial-gradient(at 0% 100%, hsla(303, 49%, 64%, 1) 0, transparent 50%),radial-gradient(at 80% 100%, hsla(263, 75%, 55%, 1) 0, transparent 50%),radial-gradient(at 0% 34%, hsla(280, 58%, 51%, 1) 0, transparent 50%);width:auto;height:270px;border-bottom-left-radius:20px;border-bottom-right-radius:20px;opacity:0.7; " >
+    <div class="container text-dark">  
+    <h5 class="" style="color:white;margin-top:10px;font-weight:bold;font-size:20px;opacity:0;"> EHM.SO?</h5>
+    <h5 class="ehm" style="color:white;margin-top:10px;font-weight:bold;font-size:20px;"> EHM.SO?</h5>
+    
+    <button type="button" class="btn" style="float:right;margin-right:25px;color:#7558bd;font-weight:bold;background-color:#e1dbf0;border-radius:5px;">See more</button>
+    
+      <h4 class="mb-1 ehm" style="font-weight:bold;color:#4B5C73;">What we do</h4>
+     
+      <h5 class="mb-1 ehm" style="color:white">Full-Service Agents, Modern Technology</h5>
+       
+    </div>
+    <div class="container mt-4">
+    
+  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card shadow-sm car">
+              <div class="content">
+                  <div style="height:60px;width:100%;">
+                    <div class="text-center mb-5 iconimg" style="background-color:#e1dbf0;border-radius:50%;height:50px;width:50px;">
+                      <i class="bi bi-chat-left-text-fill" style="color: #6904c7;;font-size:32px;"></i>
+                     </div>
+                  </div>
+                  <div class="card-body" style="height:180px;width:100%;margin-top: 50px;">
+                     
+                    <h4 class="card-title" style="text-align:center;margin-top:0px;color:white;">Contact</h4>
+                    <p class="card-text" style="text-align:center;color:white;">Single point of contact, and alse we speak your language.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+    
+            <!-- second card -->
+    
+            <div class="col">
+              <div class="card shadow-sm car ">
+                <div class="content">
+                  <div style="height:60px;width:100%;">
+                    <div class="text-center mb-5 iconimg" style="background-color:#e1dbf0;border-radius:50%;height:50px;width:50px;">
+                      <i class="bi bi-shield-fill-check" style="color: #6904c7;;font-size:30px;"></i>
+                     </div>
+                  </div>
+                  <div class="card-body" style="height:180px;width:100%;margin-top: 50px;">
+                     
+                    <h4 class="card-title" style="text-align:center;margin-top:0px;color:white;">Reliability</h4>
+                    <p class="card-text" style="text-align:center;color:white;">We keep our promises,provide upfront timelines predictablity.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+    
+           
+             <!-- third card -->
+    
+             <div class="col">
+              <div class="card shadow-sm car" >
+                <div class="content">
+                  <div style="height:60px;width:100%;">
+                    <div class="text-center mb-5 iconimg" style="background-color:#e1dbf0;border-radius:50%;height:50px;width:50px;">
+                      <i class="bi bi-magic" style="color: #6904c7;;font-size:30px;"></i>
+                     </div>
+                  </div>
+                  <div class="card-body" style="height:180px;width:100%;margin-top: 50px;">
+                     
+                    <h4 class="card-title" style="text-align:center;margin-top:0px;color:white;">Quality</h4>
+                    <p class="card-text" style="text-align:center;color:white;">All projects are backed by fanatic support & 100% satisfaction guarantee.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+            <!-- fourth card -->
+    
+            <div class="col">
+              <div class="card shadow-sm car">
+                <div class="content">
+                  <div style="height:60px;width:100%;">
+                    <div class="text-center mb-5 iconimg" style="background-color:#e1dbf0;border-radius:50%;height:50px;width:50px;">
+                      <i class="bi bi-person-circle" style="color: #6904c7;;font-size:33px;"></i>
+                     </div>
+                  </div>
+                  <div class="card-body" style="height:180px;width:100%;margin-top: 50px;">
+                     
+                    <h4 class="card-title" style="text-align:center;margin-top:0px;color:white;">Families</h4>
+                    <p class="card-text" style="text-align:center;color:white;">Rent a beautiful house for your family from individual apartments.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+  
+          </div>
+    </div>
+ 
+
+  <!-- THIRD PAGE -->
+  <section id="agent">
+  <div >
+    <div class="container-fluid mt-5 p-4 text-dark text-center " >
+    <h2 style="font-weight:bold;font-size:30px;color:white;" >Move to What You</h2>
+    <h5 style="color:white;font-size:17px;">Keep calm & travel on</h5> 
+  </div>
+    
+  <div class="container mt-2">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 caardss">
+    <div class="col caaaard zoom">
+           
+       
+                <div class="card-body ">
+                <img src="https://img.freepik.com/free-photo/house-isolated-field_1303-23772.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height:100%;width:100%;border-radius:11px;">
+                   <h3 class="card-title" style="text-align: center;margin-top:19px;color:white;">Enjoy ur Bungalow</h3>
+                    <center>
+                      <button type="button" class="btn btn-sm   bthv" style="margin-top:15px;background-color: rgb(92, 1, 177);color:white;">6,872properties</button>
+                    </center>
+               
+            </div>
+          </div>
+  
+      <!-- second row --> 
+      <div class="col caaaard zoom">
+          
+            <div class="card-body">
+                 <img src="https://img.freepik.com/free-photo/modern-residential-building_1268-14735.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height:100%;width:100%;border-radius:11px;">
+               
+                  <h3 class="card-title" style="text-align: center;margin-top:19px;color:white;">Unique in  the stay</h3>
+                  <center>
+                    <button type="button" class="btn btn-sm   bthv" style="margin-top:15px;background-color: rgb(92, 1, 177);color:white;">6,872properties</button>
+                    </center>
+                  </div>
+  
+            <!-- </div> -->
+          </div>
+    
+      <!-- third row-->
+  
+      <div class="col caaaard  zoom">
+            
+            <div class="card-body ">
+                 <img src="https://img.freepik.com/free-photo/living-room-modern-apartment-with-two-identical-sofas-opposite-each-other_181624-14768.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height:100%;width:100%;border-radius:11px;">
+              
+                <h3 class="card-title" style="text-align: center;;margin-top:19px;color:white;">Pick early sunrise</h3>
+                <center>
+                  <button type="button" class="btn btn-sm  bthv" style="margin-top:15px;background-color: rgb(92, 1, 177);color:white;" >6,872properties</button>
+                  </center>
+                </div>
+            
+            </div>
+          </div>
+  
+             
+    
+  
+    </div>
+  </div>
+
+</section>
+  
+  <!-- third page ends -->
+
+
+  <!-- FOURTH PAGE -->
+<section id="sales">
+<div class="mt-5 mb-5" style="   background-color: #6904c7;
+background-image: radial-gradient( at 19% 99%, hsla(303, 49%, 64%, 1) 0, transparent 50% ),radial-gradient(at 84% 2%, hsla(254, 86%, 63%, 1) 0, transparent 50%),radial-gradient(at 0% 100%, hsla(303, 49%, 64%, 1) 0, transparent 50%),radial-gradient(at 80% 100%, hsla(263, 75%, 55%, 1) 0, transparent 50%),radial-gradient(at 0% 34%, hsla(280, 58%, 51%, 1) 0, transparent 50%);width:auto;height:270px;border-bottom-left-radius:20px;border-bottom-right-radius:20px;;" >
+  <div class="container text-dark ">
+    <div>
+  <p class=""  style="color: #6904c7;margin-top:20px;margin-left:20px;opacity:0;">Come now!</p> 
+    </div>
+  
+  
+  <!-- dropdown -->
+  <div class="dropdown see1">
+    <button class="btn btn-light  dropdown-toggle ml-3 mr-3 border margin-left" type="button" data-toggle="dropdown"  style="font-weight:bold;color:#7558bd;background-color:#e1dbf0;border-radius:5px;">Recently added
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Recently added</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+  <button type="button" class="btn btn-light mb-4 border see"  style="float:right;color:#7558bd;;font-weight:bold;background-color:#e1dbf0;border-radius:5px;">See more</button>
+
+  
+  
+  <h4  class="seen"style="font-weight:bold;color:white;">Live Who You Are.</h4>
+  <p class="seen1"  style="color:#7558bd;font-size:20px;color:white;">Own the Home Meant for You.</p>
+  
+    
+  </div>
+  <div class="container mt-5" >
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
+  
+    <!-- first colomn -->
+      
+                
+    <div class="col">
+            <div class="card shadow-sm zoom car1">
+            <div class="card-body " >
+              <img src="https://img.freepik.com/premium-photo/external-view-modern-house-with-pool-dusk_190619-192.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height: 100%;width:100%;">
+  
+             
+                <h3 class="mt-4" style="font-weight:bold;font-size:20px;color:white;"  >Grand Estate</h3>
+                <p class="mb-1 mr-5" style="float:right;color:#7558bd;font-weight:bold;">$521</p>
+                <p style="opacity:0.5;color:white;" >Moscow 1218</p>
+               
+              </div>
+            </div>
+          </div>
+  
+  <!-- second coloumn -->
+     
+       <div class="col">
+            <div class="card shadow-sm zoom car1 ">
+            <div class="card-body " >
+              <img src="https://img.freepik.com/premium-photo/beautiful-modern-luxurious-house-with-swimming-pool_190619-211.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height: 100%;width:100%;">
+  
+              
+                <h3 class="mt-4" style="font-weight:bold;font-size:20px;color:white"  >Hotel Estate</h3>
+                <p class="mb-1 mr-5" style="float:right;color:#7558bd;font-weight:bold;">$412</p>
+                <p style="opacity:0.5;color:white;" >Moscow 1218</p>
+               
+              </div>
+            </div>
+          </div>
+  
+  
+  <!-- third coloumn -->
+       
+      <div class="col">
+            <div class="card shadow-sm zoom car1">
+            <div class="card-body " >
+              <img src="https://img.freepik.com/free-photo/charming-yellow-house-with-wooden-windows-green-grassy-garden_181624-8074.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height:100%;width:100%;">
+  
+              
+                <h3 class="mt-4" style="font-weight:bold;font-size:20px;color:white;"  >Great house</h3>
+                <p class="mb-1 mr-5" style="float:right;color:#7558bd;font-weight:bold;">$261</p>
+                <p style="opacity:0.5;color:white;" >Moscow 1218</p>
+               
+              </div>
+            </div>
+          </div>
+      
+  
+  
+      <!-- fourth coloumn -->
+    
+      <div class="col">
+            <div class="card shadow-sm zoom car1">
+            <div class="card-body " >
+              <img src="https://img.freepik.com/premium-photo/luxury-beach-house-with-sea-view-swimming-pool-big-garage-modern-design_42251-182.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height: 100%;width:100%;">
+  
+            
+                <h3 class="mt-4" style="font-weight:bold;font-size:20px;color:white;"  >Voxy Estate</h3>
+                <p class="mb-1 mr-5" style="float:right;color:#7558bd;font-weight:bold;">$652</p>
+                <p style="opacity:0.5;color:white;" >Moscow 1218</p>
+               
+              </div>
+            </div>
+          </div>
+  
+    </div>
+  </div>
+
+  
+  
+
+
+  <!-- footer starts -->
+   <hr style="margin-top:100px;">
+  <div class="container">
+    
+    <div class="row  row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
+
+        <div class="col p-5  text-dark foot1">
+      
+
+      <h3 class="float-md-start text-white mb-0 "  style="font-weight:800;display:inline;"><span style="color:#7558bd;margin-top:1px;" > <i class="bi bi-building"></i>Build</span>Estate</h3>
+        </div>
+          <div class="col p-5 foot3 text-dark border-left">
+            <h5 class="" style="color:#7558bd;">Projects</h5>
+                <p style="color:white;">Apartments</p>
+                <p style="color:white;">Flats</p>
+
+              <p style="color:white;">Bungalow</p>
+
+
+        </div>
+
+
+   
+        <div class="col p-5 foot3 text-dark border-left">
+         <h5 class="" style="color:#7558bd;">Services</h5>
+      
+        <p style="color:white;">Marketing</p>
+      
+        <p style="color:white;">Compaigns</p>
+
+        </div>
+
+       <div class="col p-5 foot4 text-dark">
+       <h5 class="" style="color:#7558bd;">About</h5>
+          <p style="color:white;">Our story</p>
+          <p style="color:white;">Benefits</p>
+
+        
+       </div>
+
+       <div class="col p-5 foot5 text-dark" >
+        <h5 class="" style="color:#7558bd;">Follow us</h5>
+       
+           <!-- <i class="bi bi-facebook" style="color:white;">Hello</i>   -->
+           <a href="https://www.google.com"><i class="bi bi-instagram"></i></a>
+           <!-- <i class="bi bi-instagram" style="color:white;"></i> -->
+   
+       </div>
+    <div>
+  </div>
+
+</div>
+
+
+<div class="row text-center">
+       <p class=" text-white " style="font-size:17px;float:right;">Made with <i class="bi bi-heart-fill" style="color:red;"></i> by Nadarajan G S</p><br><span class="text-white">© 2022 All rights reserved</span></div>
+      
+
+</div>
+
+</section>
+
+ 
+      
+
+   
+
+  
+  <!-- footer ends -->
+  
+  
+ 
+  
+  
+  
+
+    <script type="text/javascript" src="assets/dist/js/vanilla-tilt.js">
+    </script>
+
+    <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+    glare:true,
+        "max-glare":1,
+	});
+    
+        
+     
+    </script>
+        
+</body>
+</html>

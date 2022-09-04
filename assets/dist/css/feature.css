@@ -1,0 +1,102 @@
+
+/* .row {
+    --bs-gutter-x: 2.5rem;
+} */
+@media screen and (max-width:767px) {
+  .build{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 35px;
+  }
+}
+
+
+@media screen and (max-width:375px){
+    .iconimg{
+      position: absolute;
+      left:115px;
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width:390px) and (min-width:376px){
+    .iconimg{
+      position: absolute; 
+      left:125px;
+      margin-top: 40px
+    }
+  }
+  
+  @media screen and (max-width:445px) and (min-width:391px){
+    .iconimg{
+      position: absolute;
+      left: 150px;
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width:475px) and (min-width:446px){
+    .iconimg{
+      position: absolute;
+      left:160px;
+      margin-top:40px;
+    }
+  }
+  @media screen and (max-width:520px) and (min-width:476px){
+    .iconimg{
+      position:absolute;
+      left:180px;
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width:575px) and (min-width:521px){
+    .iconimg{
+      position:absolute;
+      left: 200px;
+     margin-top: 40px;
+    }
+  }
+  @media screen and  (max-width:767px) and (min-width:576px){
+    .iconimg{
+      position: absolute;
+      left: 78px;
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width:991px) and (min-width:768px){
+    .iconimg{
+      position: absolute;
+      left:130px;
+      margin-top:40px;
+    }
+  }
+  @media screen and (max-width:1199px) and (min-width:992px){
+    .iconimg{
+      position: absolute;
+      left:78px;
+      margin-top: 40px;
+    }
+  }
+    @media screen  and (max-width:1399px) and (min-width:1200px){
+      .iconimg{
+        position: absolute;
+        left:89px;
+        margin-top: 40px;
+      }
+    }
+  @media screen and (min-width:1400px){
+    .iconimg{
+      position: absolute;
+      left:110px;
+      margin-top: 40px;
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width:575px){
+    .caaaard{
+      margin-top: 10px;
+    }
+  }
+  

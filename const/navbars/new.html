@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthivar Construction</title>
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    
+    
+
+    <style>
+        .home_img{
+          
+            height:100%;
+            width:100%;
+           
+        }
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+
+      @media screen and (min-width:1200px){
+          
+        .main_right{
+          transform: translateX(50px);
+          transform: translateY(150px);
+      }
+       
+      .main_rightt{
+          /* transform: translateX(400px); */
+          transform: translateY(170px);
+      }
+      }
+    @media screen and (max-width:880px) and (min-width:767px){
+        .main_right{
+          transform: translateX(0px);
+          transform: translateY(130px);
+      }
+       
+      .main_rightt{
+          /* transform: translateX(400px); */
+          transform: translateY(150px);
+      }
+    }
+    .car{
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow:hidden;
+    display: flex;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);  
+    backdrop-filter: blur(5px);
+  }
+
+
+  .scrolldown{
+       position: absolute;
+       bottom: 20px;
+       left:50% ;
+       width:40px;
+      height:40px;
+      /* background:white; */
+      transform: translateY(-80px) translateX(-50%) rotate(45deg);
+      }
+  
+    .scrolldown span{
+      position: absolute;
+      top:0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+
+      animation: animate 1.5s linear infinite;
+      opacity: 0;
+    }
+
+    .scrolldown span:nth-child(1)
+    {
+      transform: translate(-15px, -15px);
+      animation-delay: -0.4s;
+    }
+
+
+    .scrolldown span:nth-child(2)
+    {
+      transform: translate(0, 0);
+      animation-delay: -0.2s;
+    }
+
+    .scrolldown span:nth-child(3)
+    {
+      transform: translate(15px, 15px);
+      animation-delay: 0s;
+    }
+
+    @keyframes animate{
+      0%{
+        top: -5px;
+        left:-5px;
+      opacity: 0;     
+     }
+     25%{
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+     }
+     100%{
+      top: 5px;
+      left:5px;
+      opacity: 0;
+     }
+    }
+
+    .zoom {
+  
+  transition: transform .5s;
+}
+
+.zoom:hover {
+
+  transform: scale(0.9); 
+}
+
+   
+    </style>
+</head>
+<body style="background-color:#15152d;font-family: 'Poppins', sans-serif;">
+    
+
+
+     
+ <nav class="navbar  navbar-expand-lg ">
+    <div class="container">
+       <a class="navbar-brand" href="#">   <h3 class="float-md-start mb-0 build text-white"  style="font-weight:900;">   <img src="pp.png" style="height:50px;"><span style="color:#8967f9;margin-top:1px;" >Asthivar</span></h3></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+      </svg></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"> <a class="bg nav-link text-white" href="#">Home</a> </li>
+                <li class="nav-item"> <a class="bg nav-link text-white" href="#achievements">Achievements</a> </li>
+                <li class=" nav-item "><a class="bg nav-link text-white" href="# ">About us</a>
+                <li class="nav-item "><a class="bg nav-link text-white" href="#services">Services</a></li>
+                <li class="nav-item "><a class="bg nav-link text-white" href="#">Projects</a></li>
+                <!-- <li class="nav-item "><a class="bg nav-link text-white" href="#">Projects</a></li> -->
+
+  
+    </ul>
+    <button class="btn  text-white conn1" style="background-color:#8967f9;" type="submit">Contact</button>
+  
+  </div>
+  </div>
+  
+  
+  </nav>
+  
+    
+    
+
+
+    <section id="home" >
+        <div class="container " style="margin-top:100px;" >
+            <div class="row ">
+                
+
+                <div class="col-md-6 mt-5" data-aos="fade-left">
+                    <h2 class="text-white" >WE BUILD YOUR <span style="color:#8967f9;">DREAM HOUSE</span></h2>
+                    <p class="text-white">From multifamily privateur approach endeavors to excite and upgrade the assembled condition by methods for our structural and inside outline administrations.
+a community oriented approach fills in as the motivation. The Partners and Directors are pioneers with singular space capability, uniting imaginative, specialized, and administration mastery to guarantee the accomplishment of each undertaking. The Asthivar Constructions - reputed builders in tirunelveli group is a sundry blend of energetic, youthful people, who endeavor hard to improve with outline as a device to cook adequately to customer brief necessities bringing about engineering and plan that stands the trial of time. </p>
+                    <button class="btn  " style="background-color:#8967f9;color:white;">Get Started</button>
+                </div>
+                <div class="col-md-6" data-aos="fade-right">
+                  <img src="Building safety (6).gif" class="img-fluid home_img"  >
+              </div>
+              
+                 <!-- scroll down starts -->
+   </div>
+        </div>
+      
+      </section>
+
+      <hr style="background-color:white;">
+
+
+        <section id="achievements">
+          <div class="container">
+            <center>
+              <h2  class="" style="color:#8967f9;">OUR ACHIEVEMENTS</h2>
+
+              </center>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3  g-3 mt-5">
+
+              <!-- first col -->
+              <div class="col" >
+                <div class="card shadow-sm " data-aos="fade-up" style="border:none;">
+                <div class="content" style="background-color:#15152d;">
+                    <div style="height:30px;width:100%;">
+                      <center> <i class="bi bi-check-circle-fill" style="color:white;font-size:40px;"></i></center>
+                        
+                    </div>
+                    <div class="card-body" style="height:100px;width:100%;margin-top: 50px;">
+                       
+                      <h4 class="card-title" style="text-align:center;margin-top:0px;color:white;">Completed Projects</h4>
+                      <center><h3 class="text-white mt-4 ">15</h3></center>
+                           
+                  </div>
+                </div>
+                </div>
+              </div>
+          
+
+              <!-- second col -->
+
+              <div class="col" >
+                <div class="card shadow-sm " data-aos="fade-up" style="border:none;">
+                <div class="content" style="background-color:#15152d;">
+                    <div style="height:30px;width:100%;">
+                       <center><i class="bi bi-clock-fill" style="color:white;font-size:40px;"></i></center>
+                    </div>
+                    <div class="card-body" style="height:100px;width:100%;margin-top: 50px;">
+                      
+                      <h4 class="card-title" style="text-align:center;margin-top:0px;color:white;">Ongoing Projects</h4>
+                      <center><h3 class="text-white mt-4 ">1</h3></center>
+                          
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <!-- third col -->
+
+              <div class="col" >
+                <div class="card shadow-sm " data-aos="fade-up" style="border:none;">
+                <div class="content" style="background-color:#15152d;">
+                    <div style="height:30px;width:100%;">
+                       <center><i class="bi bi-heart-fill" style="color:white;font-size:40px;"></i></center>
+                    </div>
+                    <div class="card-body" style="height:100px;width:100%;margin-top: 50px;">
+                       
+                      <h4 class="card-title" style="text-align:center;margin-top:0px;color:white;">Satisfied clients </h4>
+                           <center><h3 class="text-white mt-4 ">15</h3></center>
+                         
+                  </div>
+                </div>
+                </div>
+              </div>
+               
+
+               
+
+                
+            </div>
+          </div>
+        </section>
+        
+     
+        <section id="about">
+           <div class="container" style="margin-top:100px;" >
+            <center>
+              <h2  class="" style="color:#8967f9;" >ABOUT US</h2>
+
+              </center>
+             <div class="row mt-5">
+                <div class="col-md-6">
+                  <!-- <center>
+                   <h2 class="text-white">HEllo </h2></center> -->
+                   <!-- <img src="data:image/jpeg;base64,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" > -->
+                </div>
+
+                <div class="col-md-6">
+                      <h1 class=""style="color:#8967f9;"></h1>
+                      <br>
+                      <h3 class="text-white" data-aos="fade-left">Er.G.Thirumalai Perumal, B.E, PGDQS&V.,</h3>
+                      <h3 class="text-white" data-aos="fade-right">Managing Director,</h3>
+                      <h4 class="text-white" data-aos="fade-left">Asthivar Construction,</h4>
+                      <h4 class="text-white" data-aos="fade-right">202, Nethaji Road,</h4>
+                      <h4 class="text-white" data-aos="fade-left">Tirunelveli-Town.</h4>
+                      <!-- <button class="btn text-white" style="background-color:#8967f9;height:2px;"></button> -->
+                </div>
+             </div>
+
+           </div>
+
+        </section>
+
+
+
+        <section id="services">
+          <div class="container" style="margin-top:100px;">
+            <center>
+              <h2  class="" style="color:#8967f9">OUR SERVICES</h2>
+
+              </center>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3  g-3 mt-5">
+                    
+              <!-- first col -->
+              <div class="col" >
+                <div class="card shadow-sm car" data-aos="flip-left" style="border:none;">
+                 
+                <div class="content" >
+                    <div style="height:30px;width:100%;">
+                      <!-- <center> <i class="bi bi-check-circle-fill" style="color:white;font-size:40px;"></i></center>
+                         -->
+                         <center style="margin-top:20px;"> <i class="bi bi-bricks" style="font-size:40px;margin-top:60px;color:white;"></i> </center>
+                    </div>
+                    <div class="card-body" style="height:200px;width:100%;margin-top: 30px;">
+                       
+                      <h4 class="card-title" style="text-align:center;margin-top:0px;color:#8967f9;">Plan Approval</h4>
+                      <center><p class="text-white mt-4 ">A site design is a structural arrangement, scene engineering archive, and a point by point building attracting of proposed changes to a given part</p></center>
+                           
+                  </div>
+                </div>
+                </div>
+              </div>
+          
+
+              <!-- second col -->
+
+              <div class="col" >
+                <div class="card shadow-sm car" data-aos="flip-up" style="border:none;">
+                <div class="content" >
+                    <div style="height:30px;width:100%;">
+                       <!-- <center><i class="bi bi-clock-fill" style="color:white;font-size:40px;"></i></center> -->
+                       <center style="margin-top:20px;"> <i class="bi bi-building" style="font-size:40px;margin-top:60px;color:white;"></i> </center>
+
+                    </div>
+                    <div class="card-body" style="height:200px;width:100%;margin-top:30px;">
+                 
+                      <h4 class="card-title" style="text-align:center;margin-top:0px;color:#8967f9;">Construction</h4>
+
+                      <center><p class="text-white mt-4 ">Our tremendous involvement in development, profundity of learning, wide system of development industry specialists, extraordinary client committed groups</p></center>
+                          
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <!-- third col -->
+
+              <div class="col" >
+                <div class="card shadow-sm car" data-aos="flip-right" style="border:none;">
+                <div class="content">
+                    <div style="height:30px;width:100%;">
+                       <!-- <center><h2>Icon</h2></center> -->
+                       <center style="margin-top:20px;"> <i class="bi bi-currency-rupee" style="font-size:40px;margin-top:60px;color:white;"></i> </center>
+
+                    </div>
+                    <div class="card-body" style="height:200px;width:100%;margin-top:30px;">
+                       
+                      <h4 class="card-title" style="text-align:center;margin-top:0px;color:#8967f9;">Estimation</h4>
+                   
+                           <center><p class="text-white mt-4 ">We gauge Commercial, Civil, Residential, Specialty and Industrial development. An entire rundown of Materials with Quantities and also Locations</p></center>
+                         
+                  </div>
+                </div>
+                </div>
+              </div>
+
+
+              <!-- fourth col -->
+
+              <div class="col" >
+                <div class="card shadow-sm car" data-aos="flip-left" style="border:none;">
+                <div class="content" >
+                    <div style="height:30px;width:100%;">
+                      <!-- <center> <i class="bi bi-check-circle-fill" style="color:white;font-size:40px;"></i></center>
+                         -->
+                         <center style="margin-top:20px;"><i class="bi bi-door-open" style="font-size:40px;margin-top:60px;color:white;"></i> </center>
+
+                    </div>
+                    <div class="card-body" style="height:200px;width:100%;margin-top:30px;">
+                       
+                      <h4 class="card-title" style="text-align:center;margin-top:0px;color:#8967f9;">Completed Projects</h4>
+                      <center><p class="text-white mt-4 ">Each building is one of a kind and we don't look to convey a pre-decided vocabulary to each extend that comes to us.
+
+                      </p></center>
+                           
+                  </div>
+                </div>
+                </div>
+              </div>
+          
+              
+
+              <!-- fifth col -->
+
+
+              <div class="col" >
+                <div class="card shadow-sm car" data-aos="flip-down" style="border:none;">
+                <div class="content" >
+                    <div style="height:30px;width:100%;">
+                       <!-- <center><i class="bi bi-clock-fill" style="color:white;font-size:40px;"></i></center> -->
+                      <center style="margin-top:20px;"> <i class="bi bi-file-text-fill" style="font-size:40px;margin-top:60px;color:white;"></i></center>
+                    </div>
+                    <div class="card-body" style="height:200px;width:100%;margin-top: 30px;">
+                      
+                      <h4 class="card-title" style="text-align:center;margin-top:0px;color:#8967f9;">Documentation</h4>
+                      <center><p class="text-white mt-4 ">Imaginative approach, utilization of best in class innovation are our center esteems for accomplishing superb arrangements.</p></center>
+                          
+                  </div>
+                </div>
+                </div>
+              </div>
+               
+
+                <!-- sixth col -->
+
+
+                <div class="col" >
+                  <div class="card shadow-sm car" data-aos="flip-right" style="border:none;">
+                  <div class="content">
+                      <div style="height:30px;width:100%;">
+                         <!-- <center><h2>Icon</h2></center> -->
+                         <center style="margin-top:20px;"> <i class="bi bi-person-plus-fill" style="font-size:40px;color:white;"></i></center>
+                      </div>
+                      <div class="card-body" style="height:200px;width:100%;margin-top: 30px;">
+                         
+                        <h4 class="card-title" style="text-align:center;margin-top:0px;color:#8967f9;">Consultancy</h4>
+                             <center><p class="text-white mt-4 ">We provide consultancy that specialises in project design also expertise during the planning, designing, supervising of public and private infrastructure projects</p></center>
+                           
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                
+
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <section id="projects"> 
+        <div class="container" style="margin-top:100px;">
+          <center>
+            <h2  class=" mb-5" style="color:#8967f9;">OUR PROJECTS</h2>
+          </center>
+          
+            <div class="container mt-2">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 caardss">
+              <div class="col caaaard zoom">
+                     
+                 
+                          <div class="card-body "  data-aos="fade-up">
+                          <img src="https://img.freepik.com/free-photo/house-isolated-field_1303-23772.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height:100%;width:100%;border-radius:11px;">
+                            <h3 class="card-title" style="text-align: center;margin-top:25px;color:white;"><span style="color:#8967f9;font-size:25px;"><i class="bi bi-geo-alt-fill"></i></span>&nbsp;Melapalayam</h3>
+                             
+                              <!-- <center>
+                                <button type="button" class="btn btn-sm   bthv" style="margin-top:15px;background-color: rgb(92, 1, 177);color:white;">6,872properties</button>
+                              </center> -->
+                         
+                      </div>
+                    </div>
+            
+                <!-- second row --> 
+                <div class="col caaaard zoom">
+                    
+                      <div class="card-body"  data-aos="fade-up">
+                           <img src="https://img.freepik.com/free-photo/modern-residential-building_1268-14735.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height:100%;width:100%;border-radius:11px;">
+                         
+                            <h3 class="card-title" style="text-align: center;margin-top:25px;color:white;"><span style="color:#8967f9;font-size:25px;"><i class="bi bi-geo-alt-fill"></i></span>&nbsp;Palayamkottai</h3>
+                            <!-- <center>
+                              <button type="button" class="btn btn-sm   bthv" style="margin-top:15px;background-color: rgb(92, 1, 177);color:white;">6,872properties</button>
+                              </center> -->
+                            </div>
+            
+                      <!-- </div> -->
+                    </div>
+              
+                <!-- third row-->
+            
+                <div class="col caaaard  zoom">
+                      
+                      <div class="card-body "  data-aos="fade-up">
+                           <img src="https://img.freepik.com/free-photo/living-room-modern-apartment-with-two-identical-sofas-opposite-each-other_181624-14768.jpg?size=626&ext=jpg&ga=GA1.2.1321297356.1655276350" class="img-fluid" style="height:100%;width:100%;border-radius:11px;">
+                        
+                           <h3 class="card-title" style="text-align: center;margin-top:25px;color:white;"><span style="color:#8967f9;font-size:25px;"><i class="bi bi-geo-alt-fill"></i></span>&nbsp;Vannarpet</h3>
+                          
+                          <!-- <center>
+                            <button type="button" class="btn btn-sm  bthv" style="margin-top:15px;background-color: rgb(92, 1, 177);color:white;" >6,872properties</button>
+                            </center> -->
+                          </div>
+                      
+                      </div>
+                    </div>
+            
+                       
+              
+            
+              </div>
+          
+          
+        
+          
+        </div>
+
+        </section>
+
+ 
+        <section >
+          <div class="container" style="margin-top:80px;">
+             <center><h3 class="text-white" data-aos="fade-up">WHO WE ARE<span style="color:#8967f9;" data-aos="fade-up">&nbsp;-&nbsp;BEST BUILDERS IN TIRUNELVELI</span></h3></center>
+          
+             <p class="text-white mt-5"  data-aos="fade-up">Asthivar Constructions is a multidisciplinary engineering and configuration hone situated in Tirunelveli. At Asthivar Constructions -
+               house builders in tirunelveli, we create administrations for Live, Work and Play. </p>
+              
+            <p class="text-white"  data-aos="fade-up">From multifamily private groups, Luxury living arrangements, redevelopment lodging ventures, to single-family extravagance estates, 
+              working environments and friendliness spaces, the studio's portfolio is different. Asthivar Constructions - Best Builders in Tirunelveli endeavor hard 
+              to accomplish the most suitable, productive and financially savvy, yet tasteful answer for each scale. Applying no pre-considered or complex ideas,
+               our approach endeavors to excite and upgrade the assembled condition by methods for our structural and inside outline administrations.</p>
+               
+            <p class="text-white"  data-aos="fade-up">Driven by automatic concerns, logic, support-ability standards, cost requirements and group briefs, a community oriented approach
+               fills in as the motivation. The Partners and Directors are pioneers with singular space capability, uniting imaginative, specialized, and administration
+                mastery to guarantee the accomplishment of each undertaking. The Asthivar Constructions - reputed builders in tirunelveli group is a sundry blend of energetic, youthful people, who endeavor hard to improve with outline as a device to cook adequately to customer brief necessities bringing about engineering and plan that stands the trial of time.
+
+            </p>
+
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="contact">
+
+          <div class="container border-top " style="margin-top:150px;">
+              <!-- <center style="color:white;"><h2>Contact us</h2></center> -->
+              <div class="row mt-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+
+
+
+                <div class="col-md-4 mt-2"  data-aos="fade-up">
+                  <br>
+                 
+                 <h4  style="color:#8967f9;"><span> <img src="pp.png" alt="Girl in a jacket" width="50px" height="60px"></span>Asthivar Construction</h4>
+                    <p class="text-white">Come to Constructions, and Let's Get It Done</p>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.699874816323!2d77.68470461538408!3d8.720022893735601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0413d83102c077%3A0xd322cae74d016a59!2sTirunelveli%20Town!5e0!3m2!1sen!2sin!4v1661004415557!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                 </div>
+
+
+                
+                 <div class="col-md-4" data-aos="fade-up">
+                  <!-- <h3 style="color:#8967f9;">Asthivar Construction office</h3>
+                   -->
+                  <span> <h4 class="" style="color:#8967f9;">Asthivar Construction office</h4></span>
+                  <!-- <img src="pp.png" style="height:50px;"><span style="color:#8967f9;margin-top:1px;" >Asthivar</span></h3></a> -->
+                  <br>
+                  
+                  <h6 class="text-white">Er.G.Thirumalai Perumal , B.E</h6>
+                 
+                  <h6 class="text-white"><span style="color:#8967f9"><i class="bi bi-envelope-fill"></i></span>&nbsp;dummy@gmail.com </h6>
+
+                  <h6 class="text-white"><span style="color:#8967f9"><i class="bi bi-telephone-fill"></i></span>&nbsp;Contact no:4545648548</h6>
+
+                <br>
+                  <h4 class="" style="color:#8967f9;">Follow us on</h6>
+                    <span><i class="bi bi-instagram" style="color:white"></i></span>
+                    <span><i class="bi bi-facebook" style="color:white"></i></span>
+                    <span><i class="bi bi-twitter" style="color:white"></i></span>
+
+                 </div>
+                 <br>
+
+                 <div class="col-md-4" data-aos="fade-up">
+                     <h3 class="" style="color:#8967f9;">Business hours</h3>
+                     <br>
+                     <p class="text-white">Our support available to help you 24 hours a day, seven days a week.</p>
+                     <br>
+                     <h6 class="text-white">Monday-Friday: <span style="color:#8967f9;">9pm to 5pm</span></h6>
+                     <h6 class="text-white">Saturday: <span style="color:#8967f9;">10pm to 3pm </span></h6>
+                     <h6 class="text-white">Sunday: <span style="color:#8967f9;">closed </span></h6>
+
+
+
+                 </div>
+
+
+
+                </div>
+
+             
+                <!-- <div class="d-flex justify-content-between py-4 my-4 border-top">
+                  <p class="text-white">Follow us on</p>
+                  <p class="d-flex text-white">Site crafted by Nadarajan & Praveen</p>
+                </div> -->
+             
+              </div>
+          </div>
+        </section>
+
+   <!-- footer -->
+   <div class="container">
+  <footer class="py-5">
+    <div class="row mb">
+      <div class="col-4">
+           <h1></h1>
+      </div>
+      <div class="col-4">
+        <h1></h1>
+   </div>
+      <div class="col-4">
+        <!-- <h1>Hello world</h1> -->
+
+      </div>
+      <!-- <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p class="text-white">© 2022 Company, Inc. All rights reserved.</p>
+        <p class="d-flex text-white">Site crafted by Nadarajan & Praveen</p>
+      </div> -->
+
+      <center><p class="text-white">Copyright © 2022 Asthivar Construction-Design and Developed by <span><a href="https://www.instagram.com/natraj_g_s/" target="_blank"style="color:#8967f9;text-decoration:none;">Nadarajan</a></span> & <span><a href="https://www.instagram.com/praveen_rockzdx/" target="_blank" style="color:#8967f9;text-decoration:none;">Praveen</a></span></p></center>
+   
+  </footer>
+</div>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</html>
